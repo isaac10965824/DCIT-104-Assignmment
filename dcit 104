@@ -1,0 +1,12 @@
+the_input = int(input("Enter an integer:"))
+the_sum = 2
+print(the_sum)
+for number in range(the_input+1):
+    if int(number > 1):
+        for i in range(2, number):
+            if (number % i) == 0:
+                break
+            elif i == (number - 1):
+                the_sum += number
+                print(number)
+print(the_sum)
